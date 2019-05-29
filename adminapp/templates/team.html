@@ -1,6 +1,7 @@
 {% for obj in objs%}
-<a href="obj.url">{{obj.image.url}}</a>
+<img src="{{obj.image}}" alt="Unable to find file">
 <h3>{{obj.name}}</h3>
 <p>{{obj.designation}}</p>
+<a href="{{obj.url}}">LinkedIn profile</a>
 </div>
 {% endfor %}

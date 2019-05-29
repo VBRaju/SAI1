@@ -21,5 +21,5 @@ urlpatterns = [
     path('', ad_views.home),
     re_path(r'^about', ad_views.about),
     re_path(r'^team', ad_views.team),
-    re_path(r'^api/about/', include('adminapp.api.urls'))
+    re_path(r'^api/', include('adminapp.api.urls'))
 ]

@@ -3,8 +3,8 @@ from .views import AboutAPIView, TeamAPIView
 
 
 urlpatterns = [
-    re_path(r'about', AboutAPIView.as_view()),
-    re_path(r'team', TeamAPIView.as_view()),
+    re_path(r'^about', AboutAPIView.as_view()),
+    re_path(r'^team', TeamAPIView.as_view()),
     #path('create/',StatusListSearchAPIView.as_view()),
     #re_path(r'^(?P<id>.*)/$', StatusCreateAPIVIew.as_view())
     #re_path(r'^(?P<id>.*)/update/$', StatusUpdateAPIVIew.as_view())
