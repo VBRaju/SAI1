@@ -38,6 +38,11 @@ class Team_Members(models.Model):
     def __str__(self):
         return str(self.name)[:50]
 
+class Founders(models.Model):
+    image       =   models.ImageField(upload_to='image/founders',default='../media/img/default.jpg')
+    name        =   models.CharField(max_length=255, default= 'Enter name')
+    url         =   models.CharField(max_length=255, default='./templates/base.html')        
+
 #     class (models.Model):
 #     user        =   models.ForeignKey(settings.AUTH_USER_MODEL, on_delete = models.PROTECT, blank=True, null= True)    
 #     title       =   models.CharField(max_length=255, default= 'Enter title')
